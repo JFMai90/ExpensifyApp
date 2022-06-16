@@ -1,5 +1,3 @@
-// yarn add react-redux@5.0.5
-//yarn add redux@3.7.2
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
