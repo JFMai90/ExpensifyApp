@@ -8,6 +8,8 @@ import { setTextFilter } from './actions/filters';
 import getVisibleExpenses from './selectors/expenses';
 
 
+// git remote add all github:https://github.com/JFMai90/ExpensifyApp.git
+//git remote set-url --add --push all url = heroku:https://git.heroku.com/jm-react-expensify.git
 
 
 const store = configureStore();
