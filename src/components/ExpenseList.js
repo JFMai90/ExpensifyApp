@@ -10,6 +10,13 @@ const ExpenseList = (props) => (
     {props.expenses.map((expense) => {
       return <ExpenseListItem key={expense.id} {...expense} />
     })}
+    <button
+      type="button"
+      onClick={() => {
+        console.log('Total is:')
+      }}>
+      Get Total
+    </button>
   </div>
 );
 
