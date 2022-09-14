@@ -10,7 +10,14 @@ const ExpensesSummary = ({ expenseCount, expensesTotal }) => {
   const formattedTotal = numeral(expensesTotal).format('$0,0.00')
   return (
     <div>
-      <h1>Viewing {expenseCount} {expenseWord} totalling {formattedTotal}</h1>
+      {expenseCount ?
+        <h1>
+          Viewing {expenseCount} {expenseWord} totalling {formattedTotal}
+        </h1>
+        :
+        <h1>
+          Please add an expense.
+        </h1>}
     </div>
   )
 };

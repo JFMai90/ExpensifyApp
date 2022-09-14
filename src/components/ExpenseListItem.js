@@ -7,11 +7,10 @@ const ExpenseListItem = ({ description, amount, id }) => (
     <Link to={`/edit/${id}`}>
       <h3>{description}</h3>
     </Link>
-    <p>
+    <h3>
       {numeral(amount).format('$0,0.00')}
-      -
-      {id}
-    </p>
+    </h3>
+    <h5>{id}</h5>
   </div>
 );
 
